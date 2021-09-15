@@ -1,0 +1,9 @@
+<div style="position: relative">
+  <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+  <span style="position: absolute; top: -40px;" [ngStyle]="{'left': progress + '%'}">{{progress}}%</span>
+  <div style="position: absolute; top: -20px; width: 2px; height: 20px; background: lightblue" [ngStyle]="{'left': progress + '%'}"></div>
+</div>
+
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
