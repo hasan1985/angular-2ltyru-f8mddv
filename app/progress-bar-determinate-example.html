@@ -1,6 +1,6 @@
 <div style="position: relative">
   <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
-  <span style="position: absolute; top: -40px;" [ngStyle]="{'left': progress + '%'}">{{progress}}%</span>
+  <span style="background:lightblue; position: absolute; top: -38px;" [ngStyle]="{'left': (progress - 2) + '%'}">{{progress}}%</span>
   <div style="position: absolute; top: -20px; width: 2px; height: 20px; background: lightblue" [ngStyle]="{'left': progress + '%'}"></div>
 </div>
 
